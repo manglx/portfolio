@@ -1,5 +1,6 @@
 import * as React from 'react'
-import Navbar from './Navbar'
+import Navbar from './navbar/Navbar'
+import SocialNetworksFloatingPanel from './socialNetworks/SocialNetworksFloatingPanel'
 
 const Layout = ({ children }) => {
   return (
@@ -7,6 +8,8 @@ const Layout = ({ children }) => {
       <Navbar />
       <main>{children}</main>
       <footer>Footer</footer>
+
+      <SocialNetworksFloatingPanel />
     </>
   )
 }

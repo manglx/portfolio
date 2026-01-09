@@ -1,6 +1,6 @@
 import * as React from 'react'
-import MobileNavbar from './navbar/MobileNavbar'
-import DesktopNavbar from './navbar/DesktopNavbar'
+import MobileNavbar from './MobileNavbar'
+import DesktopNavbar from './DesktopNavbar'
 import { RiHome9Line } from 'react-icons/ri'
 import { LuAppWindow } from 'react-icons/lu'
 
