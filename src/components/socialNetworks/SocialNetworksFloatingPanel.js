@@ -22,6 +22,7 @@ const SocialNetworksFloatingPanel = () => {
             id={`tooltip-${network.name}`}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={network.name}
             className={`block ${
               colors[network.name.toLowerCase() || 'fallback']
             } hover:opacity-80 transition-opacity`}
