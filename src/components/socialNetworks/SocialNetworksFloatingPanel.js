@@ -14,7 +14,7 @@ const SocialNetworksFloatingPanel = () => {
   }
 
   return (
-    <div className="fixed bottom-4 left-4 bg-white/30 backdrop-blur-sm shadow-md p-2 rounded-full z-50 flex flex-col space-y-2">
+    <div className="fixed bottom-4 left-4 bg-white/10 backdrop-blur-sm shadow-md p-2 rounded-full z-50 flex flex-col space-y-2 border-2 border-gray-400">
       {socialNetworks.map((network) => (
         <span key={network.name}>
           <a

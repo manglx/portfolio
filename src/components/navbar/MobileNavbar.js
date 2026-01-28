@@ -10,7 +10,7 @@ const MobileNavbar = ({ routes }) => {
 
   return (
     <>
-      <nav className="flex sm:hidden justify-between">
+      <nav className="flex sm:hidden justify-between text-slate-700">
         <div className="font-bold text-xl">Manglx.</div>
         <div className="flex justify-center items-center">
           <button onClick={toggleMenu}>

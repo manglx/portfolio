@@ -19,36 +19,9 @@ const Navbar = () => {
     },
   ]
 
-  const [isAtTop, setIsAtTop] = useState(true)
-
-  const updateIsAtTop = (scrollHeight) => {
-    scrollHeight === 0 ? setIsAtTop(true) : setIsAtTop(false)
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      updateIsAtTop(window.scrollY)
-    })
-
-    return () => {
-      window.removeEventListener('scroll', () => {
-        updateIsAtTop(window.scrollY)
-      })
-    }
-  }, [])
-
   return (
     <div className="w-full fixed top-0 left-0 z-10 p-2">
-      <div
-        className={`py-4 px-6 rounded-2xl
-          transition-all duration-300 ease-in-out
-          ${
-            isAtTop
-              ? 'bg-transparent shadow-none backdrop-blur-0'
-              : 'bg-white/30 backdrop-blur-sm shadow-md'
-          }
-        `}
-      >
+      <div className="py-4 px-6 rounded-2xl transition-all duration-300 ease-in-out bg-white/10 backdrop-blur-sm shadow-md border border-slate-500/50">
         <MobileNavbar routes={routes} />
         <DesktopNavbar routes={routes} />
       </div>
