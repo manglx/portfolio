@@ -3,9 +3,8 @@ import MobileNavbar from './MobileNavbar'
 import DesktopNavbar from './DesktopNavbar'
 import { RiHome9Line } from 'react-icons/ri'
 import { LuAppWindow } from 'react-icons/lu'
-import { useState, useEffect } from 'react'
 
-const Navbar = () => {
+const Navbar = ({ openMenu }) => {
   const routes = [
     {
       name: 'Home',
@@ -20,8 +19,8 @@ const Navbar = () => {
   ]
 
   return (
-    <div className="w-full fixed top-0 left-0 z-10 p-2">
-      <div className="py-4 px-6 rounded-2xl transition-all duration-300 ease-in-out bg-white/10 backdrop-blur-sm shadow-md border border-slate-500/50">
+    <div className="w-screen fixed top-0 left-0 z-10">
+      <div>
         <MobileNavbar routes={routes} />
         <DesktopNavbar routes={routes} />
       </div>
